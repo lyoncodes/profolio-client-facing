@@ -1,0 +1,14 @@
+@import '../bootstrap/scss/functions';
+@import '../bootstrap/scss/variables';
+@import 'variables';
+
+// Reset & Dependencies
+@import "../bootstrap/scss/print";
+
+@import 'base';
+
+// Custom Styles
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: $primary-green;
+}
