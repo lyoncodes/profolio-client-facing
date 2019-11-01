@@ -3,4 +3,24 @@ body(data-spy='scroll' data-target="#navbarResponsive")
 - var btnMd = ['btn', 'btn-secondary', 'btn-md']
   #home
     nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
-      h1 Hello
+      a.navbar-brand(href = "#")
+        img(src="../styles/assets/logos/logo.png")
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse(id="navbarResponsive")
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="#home") Home
+          li.nav-item
+            a.nav-link(href="#home") About
+          li.nav-item
+            a.nav-link(href="#home") Listings
+          li.nav-item
+            a.nav-link(href="#home") Services
+          li.nav-item
+            a.nav-link(href="#home") Clients
+          li.nav-item
+            a.nav-link(href="#home") Contacts
+  .landing
+    .home-wrap
+      .home-inner
