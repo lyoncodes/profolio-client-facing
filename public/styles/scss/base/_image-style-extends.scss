@@ -1,0 +1,14 @@
+// background image layouts
+%landing-img-style{
+  background-image: url(../assets/img/country-house.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+%section-img-style{
+  background-image: url(../assets/img/country-house.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  z-index: -1;
+}

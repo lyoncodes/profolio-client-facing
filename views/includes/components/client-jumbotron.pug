@@ -1,0 +1,39 @@
+#clients.offset
+  .jumbotron
+    .col-12.text-center
+      h3.heading Clients
+      .heading-underline
+      .row
+        .col.md-6.clients
+          .row
+            .col-md-4
+              img(src='../styles/assets/img/client1.png')
+            .col-md-8
+              blockquote
+                i(class=quote_icon)
+                p Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA.                  
+                hr.clients-hr
+                cite &#8212; Mitch, Home Buyer
+        .col-md-6.clients
+          .row
+            .col-md-4
+              img(src='../styles/assets/img/client2.png')
+            .col-md-8
+              blockquote
+                i(class=quote_icon)
+                p Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA Lorem Ipsum the very best in Olympia, WA.
+                hr.clients-hr
+                cite &#8212; Lisa Redfern, Home Buyer
+.col-12.fixed-bottom
+  button.btn(type="button" aria-haspopup="true" aria-expanded="false") Let's Talk
+  button.btn.dropdown-toggle.dropdown-toggle-spli(data-toggle="dropdown" data-target="contactForm" id="#dropdown-3" type="button")
+      i(class=user_icon aria-hidden="true")
+  .dropdown-menu.p-4(id="dropdown-3")
+    h6.dropdown-header Let's Get In Touch
+    .form-group
+      label(for="dropdownEmail") Email Address
+      input(type="email" class="form-control" id="dropdownEmail" placeholder="email@example.com")
+    .form-group
+      label(for="dropdownPhone") Phone Number
+      input(type="tel" class="form-control" id="dropdownPhone")
+    button.btn.btn-primary(type="submit") Submit

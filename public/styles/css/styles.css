@@ -1,7 +1,16 @@
 body{
-  overflow-x: hidden;
-  font-family: Arial;
   color: #505962;
+  font-family: 'PerunRegular';
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+
+.offset:before{
+  display:block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;  
 }
 
 /* Navigation */
@@ -25,6 +34,10 @@ body{
     color: white;
     padding-top: .8rem;
   }
+/* Bootstrap Padding Fix */
+[class*='col-1']{
+  padding: 1rem;
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
