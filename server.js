@@ -1,7 +1,7 @@
 // dependencies
+const path = require('path');
 const express = require('express');
 const superagent = require('superagent');
-const path = require('path');
 
 //modules
 const routes = require('./public/js/routes.js');

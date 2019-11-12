@@ -1,1 +1,20 @@
-extends home-page
+#home
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+    a.navbar-brand(href = "#")
+      img(src="../styles/assets/logos/logo.png")
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href="#home") Home
+        li.nav-item
+          a.nav-link(href="#description") Services
+        li.nav-item
+          a.nav-link(href="#about") About
+        li.nav-item
+          a.nav-link(href="#resources") Listings
+        li.nav-item
+          a.nav-link(href="#clients") Clients
+        li.nav-item
+          a.nav-link(href="#contactForm" data-toggle="collapse" data-target="#contactForm") Contact

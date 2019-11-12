@@ -92,9 +92,349 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.btn, .btn-md {
+  letter-spacing: 0.1em;
+  line-height: 45px;
+  color: #000;
+  border: 4px solid #FFF;
+  box-shadow: 0px 1px 10px 0px #3f3f3f;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover, .btn-md:hover {
+  color: #000;
+  background-color: #FFF;
+  box-shadow: 0px 1px 10px 0px #3f3f3f;
+}
+.btn .span, .btn-md .span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.btn:hover span, .btn-md:hover span {
+  letter-spacing: 0.13em;
+  color: #FFF;
+}
+.btn:after, .btn-md:after {
+  background: #FFF;
+  border: 0px solid #c7c7c7;
+  content: "";
+  height: 145px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -45px;
+  -webkit-transform: rotate(47deg);
+  transform: rotate(47deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.475, 0.82, 0.265, 1);
+  /*easeOutCirc*/
+  z-index: 1;
+}
+.btn:hover:after, .btn-md:hover:after {
+  background: #FFF;
+  border: 15px solid rgba(53, 53, 53, 0.5);
+  opacity: 0.3;
+  left: 125%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.btn-md:hover:after {
+  background: #FFF;
+  border: 20px solid #9ef39e;
+  opacity: 0.3;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.btn-secondary {
+  border-color: #004f11;
+  background-color: #004f11;
+  border-width: medium;
+  border-radius: 0;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1em;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.dropdown-toggle {
+  height: 65px;
+  width: 10%;
+  margin: 1rem;
+}
+
+.btn-md {
+  box-shadow: none;
+}
+
+.btn-lg {
+  border-width: medium;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+.btn-secondary:hover {
+  border-color: #009421;
+  background-color: #009421;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  box-shadow: none;
+}
+.btn-primary:hover {
+  border: 2px solid #007bff;
+  background-color: #FFF;
+  color: #007bff;
+}
+.btn-primary:hover:after {
+  background: #FFF;
+  border: 15px solid #007bff;
+  opacity: 0.3;
+  left: 125%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.feature svg.svg-inline--fa {
+  color: white;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+.feature p {
+  font-size: 1.1rem;
+}
+
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1EBBA3;
+  color: #004f11;
+}
+
+.home-inner {
+  background-image: url(../assets/img/country-house.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.fixed {
+  background-image: url(../assets/img/country-house.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  z-index: -1;
+}
+
+.caption {
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+.caption h3 {
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+.home-inner {
+  background-image: url(../assets/img/country-house.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.fixed {
+  background-image: url(../assets/img/country-house.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  height: 100%;
+  padding: 7rem 2rem;
+}
+
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+.fixed-background p {
+  margin-top: 1.5rem;
+}
+
+.jumbotron {
+  background-color: #f0eade;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #004f11;
+  margin: 0 auto 2rem;
+}
+
+.clients img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.blockquote .svg-inline--fa {
+  color: #004f11;
+  margin: 1rem;
+}
+
+.clients-hr {
+  border-top: 0.05rem solid #004f11;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.contact-card {
+  box-shadow: 0 1px 10px 0 #b8b5b5;
+}
+
+.form-row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-input-main {
+  border: none;
+  background-color: transparent;
+}
+
+.form-group-icon {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.75rem;
+}
+.form-group-icon span {
+  margin-right: 12px;
+}
+
+footer {
+  background-color: #393e44;
+  color: white;
+  padding: 2rem 0 2rem;
+}
+footer img {
+  height: 5rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #004f11 !important;
+}
+
+hr.socket {
+  width: 97%;
+  border-top: 0.2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 3.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  .clients img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.caption {
+  top: 13%;
+}
+.caption h1 {
+  font-size: 4rem;
+}
+.caption h3 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .caption {
+    top: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .caption {
+    top: 38%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

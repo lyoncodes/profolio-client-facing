@@ -1,14 +1,68 @@
 @import '../bootstrap/scss/functions';
 @import '../bootstrap/scss/variables';
+@import '../bootstrap/scss/mixins';
 @import 'variables';
 
 // Reset & Dependencies
 @import "../bootstrap/scss/print";
+@import '../scss/base/base';
 
-@import 'base';
+// ====== DEVELOPMENT STYLES GO HERE:
 
-// Custom Styles
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
-  color: $primary-green;
+// ====== MEDIA QUERIES
+@media (max-width: 767px) {
+  .caption {
+    h1 {
+      font-size: 3.3rem;
+      letter-spacing: .15rem;
+      padding-bottom: .5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  // btn
+  .btn-lg{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+  // narrow titles
+  .narrow {
+    h1 {
+    font-size: 1.5rem;
+    }
+  }
+  // clients img
+  .clients {
+    img{
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    }
+  }  
+}
+@include media-breakpoint-up(xs){
+  .caption{
+    top: 13%;
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .caption{
+    top: 20%;
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .caption{
+    top: 38%;
+  }
 }
