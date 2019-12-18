@@ -25,8 +25,9 @@
   @extend %btn-secondary-style;
 
   &:hover{
-    border-color: $secondary-green;
-    background-color: $secondary-green;
+    color: white;
+    border-color: $primary-green;
+    background-color: $primary-green;
   }
 }
 // form button
