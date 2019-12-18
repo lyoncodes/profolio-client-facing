@@ -1,0 +1,55 @@
+.title-container{
+  // border: 1px solid blue;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+}
+// == animation: FadeIn
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  };
+}
+.logo-row{
+  // border: 1px solid pink;
+  .logo-col{
+    // border: 1px solid red;
+    #main-title{
+      font-size: 2.25em;
+      margin-top: 7px;
+      padding-left: 14px;
+    }
+    img{
+      height: 75px;
+      width: 100%;
+    }
+  }
+}
+.title-row{
+  // border: 1px solid black;
+  // margin-right: 35%;
+  span{
+    font-size: 12px;
+  }
+}
+// .landing-title{
+//   border: 1px solid green;
+//   .landing-title-text{
+//     color: $primary-green;
+//     span{
+//       text-decoration: underline;
+//     }
+//   }
+// }
+// .subtext-row{
+//   border: 1px solid pink;
+//   .landing-title-subtext{
+//     span{
+//       font-size: 14px;
+//     }
+//   }
+// }

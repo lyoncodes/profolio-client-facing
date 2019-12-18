@@ -1,0 +1,19 @@
+// ======= SERVICES ======== //
+.jumbotron{
+  background-color: $primary-tan;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: $standard-font-weight;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: $primary-green;
+  margin: 0 auto 2rem;
+}

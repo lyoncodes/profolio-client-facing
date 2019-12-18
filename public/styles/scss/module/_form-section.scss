@@ -1,0 +1,37 @@
+@import '../base/form-style-extends';
+//  ========= FORMS ============
+
+// Form Component A
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.contact-card{
+  box-shadow: 0 1px 10px 0 rgb(184, 181, 181)
+}
+
+.form-row{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-input-main{
+  border: none;
+  background-color: transparent;
+}
+.form-row>[class*=col-]{
+  padding-left: 12px;
+}
+.form-group-icon{
+  border: 1px solid rgb(0,0,0,.125);
+  border-radius: 3px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .75rem;
+  span{
+    margin-right: 12px;
+  }
+}

@@ -1,5 +1,19 @@
 doctype html
 html
-  include includes/head
-  |
-  include includes/pages/home-page
+  head
+    title Ben Gaubert, REALTOR
+    include includes/head
+  body(data-spy='scroll' data-target='#navbarResponsive')
+    include includes/variables
+    //- include includes/components/title
+    include includes/components/navigation
+    include includes/components/landing
+    //- include includes/components/portfolio
+    //- include includes/components/accordion-section
+    //- include includes/components/contact-cards
+    //- include includes/components/client-jumbotron
+    //- include includes/components/description-banner
+    //- include includes/components/services
+    //- include includes/components/contact-section
+    //- include includes/components/client-carousel
+    include includes/scripts

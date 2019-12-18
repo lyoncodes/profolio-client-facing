@@ -1,0 +1,28 @@
+// ======== CONTACT SECTION ========= //
+footer{
+  background-color: $stone-grey;
+  color: white;
+  padding: 2rem 0 2rem;
+  
+  img {
+    height: 5rem;
+    margin: 1.5rem 0;
+  }
+
+  a {
+    color: white;
+  }
+
+  // svg.svg-inline--fa{
+  //   font-size: 1.6rem;
+  //   margin: 1.2rem .5rem 0 0;
+  //     &:hover{
+  //       color: $primary-green !important;
+  //     }
+  // } 
+}
+hr.socket{
+  width: 97%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}

@@ -1,0 +1,27 @@
+/* ======= NAVIGATION ========= */
+#home{
+  height: 8rem;
+}
+
+.navbar{
+  background-color: white;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.navbar-brand img{
+  margin-bottom: .75rem;
+  height: 4.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover{
+  color: $primary-green;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}

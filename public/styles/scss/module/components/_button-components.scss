@@ -1,0 +1,51 @@
+@import '../../base/button-style-extends';
+// =========== BUTTONS ============== //
+.btn{
+  border-radius: 0;
+  @extend %btn-style-override;
+}
+.dropdown-toggle{
+  height: 65px;
+  width: 10%;
+  margin: 1rem;
+}
+// btn md
+.btn-md{
+  @extend %btn-md-style;
+  box-shadow: none;
+}
+// btn lg
+.btn-lg{
+  border-width: medium;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+// secondary-btn
+.btn-secondary{
+  @extend %btn-secondary-style;
+
+  &:hover{
+    color: white;
+    border-color: $primary-green;
+    background-color: $primary-green;
+  }
+}
+// form button
+.btn-primary{
+  background-color:#007bff;
+  border: 2px solid #007bff;
+  box-shadow: none;
+  &:hover{
+    border: 2px solid #007bff;
+    background-color: #FFF;
+    color: #007bff;
+  }
+  &:hover:after{
+    background: #FFF;
+    border: 15px solid #007bff;
+    opacity: 0.3;
+    left: 125%;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
