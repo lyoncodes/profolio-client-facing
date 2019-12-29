@@ -1,6 +1,6 @@
 body{
   color: #505962;
-  font-family: 'PerunRegular';
+  /* font-family: 'PerunRegular'; */
   overflow-x: hidden;
 }
 
@@ -13,27 +13,6 @@ body::-webkit-scrollbar { width: 0 !important }
   margin-top: -4rem;  
 }
 
-/* Navigation */
-.navbar{
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .9rem;
-  letter-spacing: .1rem;
-  background-color: rgba(0,0,0, 0.6) !important;
-}
-  /* logo */
-  .navbar-brand img{
-    height: 2rem;
-  }
-
-  /* ul, li */
-  .navbar-nav li{
-    padding-right: .7rem;
-  }
-  .navbar-dark .navbar-nav .nav-link {
-    color: white;
-    padding-top: .8rem;
-  }
 /* Bootstrap Padding Fix */
 [class*='col-1']{
   padding: 1rem;

@@ -1,22 +1,30 @@
-#about.offset
-  .jumbotron 
-    .narrow.text-center
-      .col-12
-        h3.heading Services
-        .heading-underline
-      .row.text-center
-        .col-md-4
-          .feature
-            i(class=play_icon data-fa-transform="shrink-3 up-5")
-            h3 Buying
-            p Serving Olympia, WA
-        .col-md-4
-          .feature
-            i(class=slider_icon data-fa-transform="shrink-4.5 up-4.5")
-            h3 Selling
-            p Serving Olympia, WA
-        .col-md-4
-          .feature
-            i(class=page_icon data-fa-transform="shrink-4.5 up-4.5")
-            h3 Managing
-            p Serving Olympia, WA
+.container-fluid.services-container
+  .row.justify-content-center
+    .service-col.col-xl-4.mt-5.mb-30.ml-auto.pb-2
+      .card.service-card
+        a.post-thumb(href="#")
+          img(src="../styles/assets/img/country-house.jpg")
+        .service-card-body
+          h5.service-title
+            a(href="#") Empowering The Right Decision
+          #accordion
+            .card
+              #headingOne.card-header
+                h5.mb-0
+                  button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | Buyers
+                    i(class=plus_icon)
+              #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion')
+                .card-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .card
+              #headingTwo.card-header
+                h5.mb-0
+                  button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Sellers
+                    i(class=plus_icon)
+              #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
+                .card-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+    .col-xl-4.text-center.align-self-center.ml-auto.mr-auto
+      h1 Let's Accomplish Your Real Estate Goals

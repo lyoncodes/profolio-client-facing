@@ -1,14 +1,302 @@
-// ========= CLIENT REVIEW SECTION ========= //
-.clients{
-  img{
-    width: 100%;
-    border-radius: 50%;
+// @include media-breakpoint-only(xs) { ... }
+// @include media-breakpoint-only(sm) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-only(lg) { ... }
+// @include media-breakpoint-only(xl) { ... }
+
+// ========= CLIENT CAROUSEL SECTION ========= //
+.card{
+  border: none;
+  border-radius: 0%;
+  -webkit-box-shadow: 0 1.1875rem 1.75rem 0.3125rem rgba(64,64,64,0.09);
+  box-shadow: 0 1.1875rem 1.75rem 0.3125rem rgba(64,64,64,0.09);
+  &:after{
+    display: block;
+    position: absolute;
+    bottom: -.625rem;
+    left: 1.25rem;
+    width: calc(100% - 2.5rem);
+    height: 2.1875rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1.1875rem 1.75rem 0.3125rem rgba(64,64,64,0.09);
+    box-shadow: 0 1.1875rem 1.75rem 0.3125rem rgba(64,64,64,0.09);
+    content: '';
+    z-index: -1;
   }
 }
-.blockquote .svg-inline--fa{
-  color: $primary-green;
-  margin: 1rem;
+.client-card{
+  background: none;
+  border: none;
 }
+.client-card .post-format{
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: $primary-green;
+  font-size: 1rem;
+  line-height: 34px;
+  text-align: center;
+  -webkit-box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
+  box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
+}
+.client-card-body{
+  // margin: 1em;
+  flex: 1 1 auto;
+  padding: 2rem 3.5rem 2rem 3.5rem;
+
+  .review-text{
+    display: block;
+    position: relative;
+    margin-top: .75rem;
+    padding-bottom: .625rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+  }
+  .review-text>a{
+    transition: color .3s;
+    text-decoration: none;
+  }
+
+  .tag-link{
+    display: inline-block;
+    position: relative;
+    margin-top: .3125rem;
+    margin-right: .375rem;
+    margin-bottom: .3125rem;
+    padding: .3125rem .75rem;
+    -webkit-transition: color .25s;
+    transition: color .25s;
+    background-color: #fff;
+    color: #404040;
+    font-size: .6875rem;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+    box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+    z-index: 1;
+  }
+
+}
+// Card Footer
+// ML - 6:12 pm 12/11
+.client-card .client-card-footer{
+  display: flex;
+  align-items: center;
+  background: -webkit-linear-gradient(to right, #71B280, #134E5E);  
+  background: linear-gradient(to right, #71B280, #134E5E); 
+  border-top: 1px solid #e7e7e7;
+  justify-content: space-between;
+  padding-top: .75rem;
+  padding-right: 1.5rem;
+  padding-bottom: .75rem;
+  padding-left: 1.5rem;
+
+  .post-author{
+    display: table;
+    text-decoration: none;
+    
+    .post-author-avatar{
+      display: table-cell;
+      width: 28px;
+      vertical-align: middle;
+    }
+    .post-author-avatar>img{
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+    }
+    .post-author-name{
+      color: white;
+      display: table-cell;
+      padding-left: .5rem;
+      -webkit-transition: opacity .25s;
+      transition: opacity .25s;
+      font-size: .85rem;
+      font-weight: 600;
+      opacity: .7;
+      vertical-align: middle;
+    }
+  }
+  .post-meta>span, .post-meta>a{
+    margin-left: 10px;
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s;
+    color: white;
+    font-size: .625rem;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: .7;
+  }
+}
+
+// Card Container
+.carousel-card{
+  background: white;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+#clientCarousel{
+  overflow: hidden;
+  .carousel-item{
+    background: none;
+  }
+}
+
+.carousel-card-content{
+  border: none;
+}
+  
+// Carousel Card Pic Col.
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .655s ease;
+  background-color: rgba(32, 35, 36, 0.582);
+}
+
+.overlay-link{
+  color: white;
+}
+.carousel-card-pic-col{
+  background: url('../assets/img/oly-1.png');
+  background-size: cover;
+
+  padding-right: 0;
+
+  &:hover .overlay{
+    opacity: 1;
+  }
+  &:hover .overlay{
+    opacity: 1;
+  }
+}
+
+// Carousel Card Text Col.
+.carousel-card-content-col{
+  padding: 1em;  
+  .carousel-card-text{
+    color: #707070;
+    font-size: 22px;
+    font-weight: 100;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    p{
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+  }
+
+  cite{
+    font-size: 1em;
+  }
+}
+// Carousel Indicators
+.carousel-indicators li{
+  background-color: $stone-grey;
+}
+// Card Heading
+h3.carousel-heading{ 
+  font-size: 1.25rem;
+  font-weight: 750;
+  margin-bottom: 0;
+  margin-left: 1em;
+  text-align: right;
+}
+
+// Carousel Card Icons
+// quotes
+.fa-quote-left{
+  color: $primary-green;
+}
+// homerow
 .clients-hr{
-  border-top: .05rem solid $primary-green;
+  border-top: .05rem solid #b4b4b4;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  width: 16.5%;
+}
+// stars
+.star-row-container{
+  margin-left: .15em;
+  display: block;
+  .fa-star{
+    color: $primary-green;
+  }
+}
+
+// Footer
+.client-footer{
+  background: none;
+  display: table;
+  margin-left: 3rem;
+  padding: .5rem 0 0 0;
+}
+
+.client-avatar{
+  display: table-cell;
+  width: 48px;
+  vertical-align: middle;
+  img{
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: .5rem 0;
+  }
+}
+
+.blockquote-footer{
+  margin-bottom: .75em;
+  position: relative;
+  padding-top: .5rem;
+  font-size: .875rem;
+  font-weight: bold;
+
+  &::before{
+    content: '';
+  }
+  cite{
+    display: block;
+    color: #8c8c8c;
+    font-family: "Open Sans",sans-serif;
+    font-size: .75rem;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+// lg
+@media (min-width: 992px) { 
+  .carousel-container{
+    display: block;
+  }
+  .carousel-card{
+    margin-top: 2em;
+  }
+  .carousel-card-pic-col{
+    box-shadow: 4px 4px 25px 5px rgba(207, 207, 207, 0.995); 
+  }
+  .carousel-card-content-col{
+    line-height: 19px;
+    padding: .5em 1em 0 1em;  
+    .carousel-card-text{
+      font-size: 15px;
+      font-weight: 100;
+      padding-left: 2.5em;
+      padding-right: 2em;
+      margin-bottom: 0;
+    }
+  }
+
 }

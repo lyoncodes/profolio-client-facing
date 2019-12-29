@@ -1,20 +1,39 @@
-#home
-  nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
-    a.navbar-brand(href = "#")
-      img(src="../styles/assets/logos/logo.png")
-    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive")
-      span.navbar-toggler-icon
-    #navbarResponsive.collapse.navbar-collapse
+nav.navbar.navbar-expand-lg.navbar-dark
+  .container
+    a.navbar-brand(href='#')
+      img(src="../styles/assets/img/BenGaubert.png" id="profile-pic")
+    button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#main-nav')
+      span.menu-icon-bar
+      span.menu-icon-bar
+      span.menu-icon-bar
+    #main-nav.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
-        li.nav-item
-          a.nav-link(href="#home") Home
-        li.nav-item
-          a.nav-link(href="#description") Services
-        li.nav-item
-          a.nav-link(href="#about") About
-        li.nav-item
-          a.nav-link(href="#resources") Listings
-        li.nav-item
-          a.nav-link(href="#clients") Clients
-        li.nav-item
-          a.nav-link(href="#contactForm" data-toggle="collapse" data-target="#contactForm") Contact
+        li
+          a.nav-item.nav-link.active(href='#') Home
+        li
+          a.nav-item.nav-link(href='#') Meet Ben
+        li
+          a.nav-item.nav-link(href='#') Services
+        li.dropdown
+          a.nav-item.nav-link(href='#' data-toggle='dropdown') Contact
+          .dropdown-menu
+            a.dropdown-item(href='#') (206) 471-9205
+            a.dropdown-item(href='#') bengaubert@greenerealty.com
+            a.dropdown-item(href='#') 500 Greene Way
+
+//- nav.navbar.fixed-top.navbar-expand-lg.scrolling-navbar
+//-   a.navbar-brand(href="#")
+//-     img(src="../styles/assets/img/BenGaubert.png")
+//-   button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+//-     span.navbar-toggler-icon
+//-   .collapse.navbar-collapse(id="navbarResponsive")
+//-     ul.navbar-nav.ml-auto
+//-       li.nav-item
+//-         a.nav-link(href="#") Home
+//-       li.nav-item
+//-         a.nav-link(href="#") Services
+//-       li.nav-item
+//-         a.nav-link(href="#") Meet Ben
+//-       li.nav-item
+//-         a.nav-link(href="#") Connect
+

@@ -22,7 +22,9 @@ button:focus {
   border: none;
   background-color: transparent;
 }
-
+.form-row>[class*=col-]{
+  padding-left: 12px;
+}
 .form-group-icon{
   border: 1px solid rgb(0,0,0,.125);
   border-radius: 3px;

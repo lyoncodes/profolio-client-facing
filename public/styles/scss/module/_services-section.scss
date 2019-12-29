@@ -1,19 +1,52 @@
 // ======= SERVICES ======== //
-.jumbotron{
-  background-color: $primary-tan;
-  border-radius: 0;
-  margin-bottom: 0;
-  padding: 2rem 0 3.5rem;
+.services-container{
+  h1{
+    font-size: 4rem;
+    font-weight: 800;
+  }
 }
-h3.heading{
-  font-size: 1.9rem;
-  font-weight: $standard-font-weight;
-  text-transform: uppercase;
-  margin-bottom: 1.9rem;
+.service-col{
+  // border: 1px solid black;
+  .service-card{
+    .post-thumb{
+      display: block;
+      position: relative;
+    }
+    .post-thumb>img{
+      display: block;
+      width: 100%;
+    }
+    .service-card-body{
+      padding: 1.25rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .service-title{
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        font-weight: 900;
+        font-size: 2.125rem;
+        letter-spacing: 0.021rem;
+      }
+      .service-title>a{
+        color: #515052;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+        text-decoration: none;
+      }
+      .card-body{
+        font-size: 1.25em;
+        line-height: 26px;
+        font-weight: 100;
+        letter-spacing: 0.4px;
+      }
+    }
+  }
 }
-.heading-underline{
-  width: 3rem;
-  height: .2rem;
-  background-color: $primary-green;
-  margin: 0 auto 2rem;
+#accordion {
+  .svg-inline--fa {
+    margin-left: 1em;
+  }
 }
