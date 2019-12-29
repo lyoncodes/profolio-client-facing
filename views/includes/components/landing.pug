@@ -1,7 +1,7 @@
 //- ====== LANDING IMAGE SECTION =======
 .container-fluid.two-col-container
   .row.two-col-content.justify-content-center
-    .col-xl-4.col-lg-4.col-sm-12.two-col-img-container.card
+    .col-xl-4.col-lg-4.col-sm-8.two-col-img-container.card
       .landing-img-container.mr-auto.ml-auto
         img(src="../styles/assets/img/client2.png" class="img-fluid landing-img")
       .card.landing-card.pb-2.mb-4
@@ -21,30 +21,26 @@
                 i(class=page_icon)
                 span Office
                 a(href="#") 5000 Greene Way
-      |
-      //- landing icons: greene, redfin, zillow, linkedin
-      |
-      .icon-container.ml-auto.mr-auto
-        .row.align-items-center.justify-content-center
-          .col-auto.text-center
-            span.icon-span
-              img(src="../styles/assets/logos/logo.png" class="img-fluid landing-img-icon")
-          .col-auto.text-center
-            span.icon-span
-              img(src="../styles/assets/logos/redfin.png" class="img-fluid landing-img-icon")
-          .col-auto.text-center
-            span.icon-span
-              img(src="../styles/assets/logos/zillow.png" class="img-fluid landing-img-icon")
-          .col-auto.text-center
-            span.icon-span
-              img(src="../styles/assets/logos/linkedin.png" class="img-fluid landing-img-icon")
-    .col-lg-6.col-sm-12.two-col-text-container
-      .col-lg-10.col-sm-12.text-center
-        h2 Your Guide To Thurston County Real Estate
+    .col-lg-6.col-sm-12.two-col-text-container.ml-auto.mr-auto
+      .col-lg-10.col-sm-12.text-center.ml-auto
+        h1 Your Guide To Thurston County Real Estate
         .row.text-left
           p Distinct natural beauty and a community second to none make Olympia an amazing place to call home. No matter what your path or where you're from, I can help achieve your real estate goals with confidence and peace of mind. Local flavor with endless options. Achieving your real estate goals through relationships built on trust and communication.
         hr.clients-hr
+        .col-12
+          .row.justify-content-center
+            .icon-container
+              .row
+                .col-auto.text-center
+                  span.icon-span
+                    img(src="../styles/assets/logos/redfin.png" class="img-fluid landing-img-icon")
+                .col-auto.text-center
+                  span.icon-span
+                    img(src="../styles/assets/logos/zillow.png" class="img-fluid landing-img-icon")
+                .col-auto.text-center
+                  span.icon-span
+                    img(src="../styles/assets/logos/linkedin.png" class="img-fluid landing-img-icon")
         |
         //- Landing Reviews
         |
-        include landing-reviews
+        //- include landing-reviews

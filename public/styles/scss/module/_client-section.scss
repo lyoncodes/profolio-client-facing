@@ -25,13 +25,13 @@
   }
 }
 .client-card{
+  background: none;
   border: none;
 }
 .client-card .post-format{
   display: block;
   width: 34px;
   height: 34px;
-  margin-bottom: 1rem;
   border-radius: 50%;
   background-color: #fff;
   color: $primary-green;
@@ -42,18 +42,14 @@
   box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
 }
 .client-card-body{
-  // background: url('../assets/img/country-house.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // border: 1px solid green;
+  // margin: 1em;
   flex: 1 1 auto;
   padding: 2rem 3.5rem 2rem 3.5rem;
 
   .review-text{
     display: block;
     position: relative;
-    margin-bottom: .75rem;
+    margin-top: .75rem;
     padding-bottom: .625rem;
     font-size: 1.25rem;
     line-height: 1.4;
@@ -89,7 +85,8 @@
 .client-card .client-card-footer{
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background: -webkit-linear-gradient(to right, #71B280, #134E5E);  
+  background: linear-gradient(to right, #71B280, #134E5E); 
   border-top: 1px solid #e7e7e7;
   justify-content: space-between;
   padding-top: .75rem;
@@ -112,7 +109,7 @@
       width: 100%;
     }
     .post-author-name{
-      color: $primary-green;
+      color: white;
       display: table-cell;
       padding-left: .5rem;
       -webkit-transition: opacity .25s;
@@ -127,7 +124,7 @@
     margin-left: 10px;
     -webkit-transition: opacity .25s;
     transition: opacity .25s;
-    color: $primary-green;
+    color: white;
     font-size: .625rem;
     font-weight: 600;
     text-decoration: none;
@@ -137,16 +134,15 @@
 
 // Card Container
 .carousel-card{
-  margin-top: 2em;
-  margin-bottom: 2em;
+  background: white;
+  margin-bottom: 4em;
+  margin-top: 4em;
 }
 
 #clientCarousel{
-  margin-top: 1em;
-  margin-bottom: 1em;
   overflow: hidden;
   .carousel-item{
-    background-color: #ffffff;
+    background: none;
   }
 }
 
@@ -172,7 +168,7 @@
   color: white;
 }
 .carousel-card-pic-col{
-  background: url('../assets/img/country-house.jpg');
+  background: url('../assets/img/oly-1.png');
   background-size: cover;
 
   padding-right: 0;
@@ -284,6 +280,9 @@ h3.carousel-heading{
 @media (min-width: 992px) { 
   .carousel-container{
     display: block;
+  }
+  .carousel-card{
+    margin-top: 2em;
   }
   .carousel-card-pic-col{
     box-shadow: 4px 4px 25px 5px rgba(207, 207, 207, 0.995); 

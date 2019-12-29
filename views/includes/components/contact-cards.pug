@@ -1,83 +1,10 @@
-#contactForm.container.mt-4
-  .col-lg-8
-    .card.contact-card
-      .card-body
-        form
-          h3.text-center.font-bold.py-4
-            strong Contact Ben
-          |
-          .form-row.justify-content-center
-            .form-group.form-group-icon.col-md-6
-              span
-                i(class=user_icon aria-hidden="true")
-              input.form-input-main(type="text" placeholder="Your Name")
-            |
-            //- Email
-            |
-          .form-row.justify-content-center
-            .form-group.form-group-icon.col-md-6
-              span
-                i(class=envelope_icon aria-hidden="true")
-              input.form-input-main(type="email" placeholder="Your Email")
-          |
-          //- Radio Selection
-          |
-          .form-row.justify-content-center
-            .form-group.col-md-6
-              label(for="dropdown-menu") I'm Looking To
-              select.form-control(id="dropdown-menu")
-                option.selected List My Property
-                option Buy a Home
-                option Rent
-                option Chat
-            //- .form-row
-            //-   fieldset.form-group.col-md-6#form-group-id
-            //-     label(for="form-group-id") I'm Looking To
-            //-     .form-check
-            //-       input.form-check-input(type="checkbox" name="gridRadios" id="gridRadios1" value="Buy" checked)
-            //-       label.form-check-label(for="gridRadios1") Buy
-            //-     .form-check
-            //-       input.form-check-input(type="checkbox" name="gridRadios" id="gridRadios1" value="Buy")
-            //-       label.form-check-label(for="gridRadios1") Sell
-            //-     .form-check
-            //-       input.form-check-input(type="checkbox" name="gridRadios" id="gridRadios1" value="Buy")
-            //-       label.form-check-label(for="gridRadios1") Rent
-            //-     .form-check
-            //-       input.form-check-input(type="checkbox" name="gridRadios" id="gridRadios1" value="Buy")
-            //-       label.form-check-label(for="gridRadios1") Chat
-          .form-row.justify-content-center
-            .form-group.col-md-6
-              label(for="formControlTextarea")
-              textarea.form-control#formControlTextarea(rows="3" placeholder="Message")
-        |
-        //- Button
-        |
-        .text-center.py-4
-          button.btn Send It
-            i(class=paperplane_icon)
-//- #contactForm.collapse.container.mt-4
-//-   .text-center.mb-4
-//-     form
-//-       .form-row
-//-         .form-group.col-md-6.mb-4
-//-           label(for="inputName") Name 
-//-           input.form-control(type="text" id="inputName" placeholder="name")
-//-         .form-group.col-md-6
-//-           label(for="inputEmail") Email 
-//-           input.form-control(type="text" id="inputEmail" placeholder="email")
-//-       .form-row
-//-         .form-group.col-md-6
-//-           label(for="inputPhone") Phone 
-//-           input.form-control(type="tel" id="inputPhone" placeholder="360-xxx-xxxx")
-//-         .form-group.col-md-4
-//-           label(for="inputOption") I'm Looking To...
-//-           select#inputOption.form-control
-//-             option Buy
-//-             option Sell
-//-             option Rent
-//-             option Chat
-//-       .form-row
-//-         .form-group.col-md-6
-//-           label(for="inputNote") Note
-//-           input.form-control(type="text" id="inputNote"  placeholder="Message")
-//-       button.btn.btn-primary(type="submit") Submit
+.contact-container.card
+  h1.ml-auto.mr-auto.mt-5 A People First Approach
+  .row.align-items-center
+    .col-lg-4.col-sm-12.ml-auto
+      .col-lg-10.col-sm-6.text-center.ml-auto.mr-auto
+        .row.text-left
+          p  No matter what your path or where you're from, I can help achieve your real estate goals with confidence and peace of mind. Local flavor with endless options. Achieving your real estate goals through relationships built on trust and communication.
+        hr.clients-hr
+    .col-lg-4.col-sm-6.ml-auto.mr-auto
+      include landing-reviews
