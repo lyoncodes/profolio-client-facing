@@ -1,6 +1,6 @@
 // background image layouts
 %landing-img-style{
-  background-image: url(../assets/img/mtn.jpg);
+  background-image: url(../assets/img/oly-2.png);
   background-size: cover;
   background-position: center;
   // height: 800px;
@@ -10,9 +10,9 @@
   // box-shadow: inset 0px 181px 37px -68px rgba(255,255,255,1);
 }
 %section-img-style{
-  background-image: url(../assets/img/country-house.png);
+  background-image: url(../assets/img/mtn.jpg);
   background-size: cover;
   background-position: center;
-  height: 650px;
+  // height: 650px;
   z-index: -1;
 }

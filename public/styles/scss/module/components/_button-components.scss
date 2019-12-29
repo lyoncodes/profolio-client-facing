@@ -1,8 +1,16 @@
 @import '../../base/button-style-extends';
 // =========== BUTTONS ============== //
 .btn{
-  border-radius: 0;
   @extend %btn-style-override;
+  &:hover{
+    background: darken($color: $primary-green, $amount: 3%);
+    border: 1px solid rgba(#000, 0.5);
+    box-shadow: 1px 1px 2px rgba(#fff, .2);
+    color: lighten(white, 18%);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 darken(#000, 9.5%);
+    transition: all 250ms linear;
+  }
 }
 .dropdown-toggle{
   height: 65px;
