@@ -1,26 +1,95 @@
-#about.offset
-  .fixed-background
-  .fixed-wrap
-  .fixed
-    .row.dark.text-center
-      .col-12
-        h1 All About Ben
-        .heading-underline
-      .col-md-4.col-sm-12
-        h5 Fishing
-        //- img(src="../styles/assets/img/country-house.jpg", alt="")
-        .feature
-          i(class=money_icon)
-        p.lead An unmatched attention to detail
-      .col-md-4.col-sm-12
-        h5 Cooking
-        //- img(src="../styles/assets/img/country-house.jpg", alt="")
-        .feature
-          i(class=money_icon)
-        p.lead Guiding the way
-      .col-md-4.col-sm-12
-        h5 Community
-        //- img(src="../styles/assets/img/country-house.jpg", alt="")
-        .feature
-          i(class=money_icon)
-        p.lead Getting the right deal
+#about.mt-5.card
+  .col-12.text-center
+    h1.little-title.mt-5 Get To Know Me
+  .col-xl-8.col-lg-8.col-sm-8.ml-auto.mr-auto
+    .card.mb-5
+      .profile-card-header
+        ul.nav.nav-tabs(role="tablist")
+          li.profile-nav-link
+            a(href="#fishing" class="profile-link active" data-toggle="tab" role="tab")
+              i(class=fish_icon)
+              span Fishing
+          li.profile-nav-link
+            a(href="#cooking" class="profile-link" data-toggle="tab" role="tab")
+              i(class=cooking_icon)
+              span Cooking
+          li.profile-nav-link
+            a(href="#community" class="profile-link" data-toggle="tab" role="tab")
+              i(class=fish_icon)
+              span Community
+      .profile-card-body.text-center.active(id="fishing" role="tabpanel")
+        h5 Let's Go Fishing!
+          .col-lg-8.col-sm-8.mr-auto.ml-auto.mt-3
+            p.text-content.text-left  Like so many in our community, fishing is my year-round passion and perferred recreational activity. Washington's abundant waters are home to some of the world's most dedicated anglers. Nothing can top the joy of a fresh catch or a good chat around the tackle box.
+        .row
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing.jpg")
+              //- figcaption.text-left This is Caption
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing1.jpg")
+              //- figcaption.text-left This is Caption 2
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing2.jpg")
+              //- figcaption.text-left This is Caption 3
+      .profile-card-body.text-center(id="cooking" role="tabpanel")
+        h5 Let's Cook A Meal!
+          .col-lg-8.col-sm-8.mr-auto.ml-auto.mt-3
+            p.text-content.text-left  Like so many in our community, fishing is my year-round passion and perferred recreational activity. Washington's abundant waters are home to some of the world's most dedicated anglers. Nothing can top the joy of a fresh catch or a good chat around the tackle box.
+        .row
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing.jpg")
+              //- figcaption.text-left This is Caption
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing1.jpg")
+              //- figcaption.text-left This is Caption 2
+          .col-sm-12.col-lg-4
+            figure
+              img.img-fluid(src="../styles/assets/img/fishing2.jpg")
+              //- figcaption.text-left This is Caption 3
+      .profile-card-body.text-center(id="community" role="tabpanel")
+        h5 Special community treatment
+        p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+        .row.pb-5
+          .col-4
+            figure
+              img.img-fluid(src="../styles/assets/img/mtn.jpg")
+              //- figcaption.text-center This is Caption
+          .col-4
+            figure
+              img.img-fluid(src="../styles/assets/img/mtn.jpg")
+              //- figcaption.text-center This is Caption 2
+          .col-4
+            figure
+              img.img-fluid(src="../styles/assets/img/mtn.jpg")
+              //- figcaption.text-center This is Caption 3
+//- #about.offset
+//-   .fixed-background
+//-   .fixed-wrap
+//-   .fixed
+//-     .row.dark.text-center
+//-       .col-12
+//-         h1 All About Ben
+//-         .heading-underline
+//-       .col-md-4.col-sm-12
+//-         h5 Fishing
+//-         //- img(src="../styles/assets/img/country-house.jpg", alt="")
+//-         .feature
+//-           i(class=money_icon)
+//-         p.lead An unmatched attention to detail
+//-       .col-md-4.col-sm-12
+//-         h5 Cooking
+//-         //- img(src="../styles/assets/img/country-house.jpg", alt="")
+//-         .feature
+//-           i(class=money_icon)
+//-         p.lead Guiding the way
+//-       .col-md-4.col-sm-12
+//-         h5 Community
+//-         //- img(src="../styles/assets/img/country-house.jpg", alt="")
+//-         .feature
+//-           i(class=money_icon)
+//-         p.lead Getting the right deal

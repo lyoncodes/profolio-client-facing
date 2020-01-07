@@ -6,13 +6,11 @@
     .two-col-img-container{
       box-shadow: 10px 10px 15px -12px rgba(0,0,0,0.75);
       background: white;
-      margin-top: 9.5em;
-      margin-bottom: 7em;
+      margin-top: 5em;
     }
 
     .landing-img{
       margin-bottom: 1rem;
-      margin-top: 2rem;
       padding: 1rem;
       // border: 1px solid orange;
     }
@@ -26,10 +24,6 @@
       h6{
         margin-top: 0;
         margin-bottom: .75rem;
-        color: $stone-grey;
-        font-weight: 900;
-        font-size: 3.125rem;
-        letter-spacing: .021rem;
       }
     }
     .card .landing-contacts{
@@ -44,7 +38,7 @@
       }
       ul>li{
         display: block;
-        color: #343b43;
+        color: $stone-grey;
         font-size: .875rem;
         font-weight: bold;
         letter-spacing: .021em;
@@ -104,8 +98,8 @@
       // margin-top: 2.25em;
       .icon-span{
         display: block;
-        width: 95px;
-        height: 95px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         background-color: #fff;
         -webkit-box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
@@ -117,10 +111,10 @@
       // }
       .landing-img-icon{
         display: inline-block;
-        padding-left: 1.85rem;
-        padding-top: 1.75rem;
-        padding-right: 1.75rem;
-        padding-bottom: 1.75rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
         height: 100%;
         // width: 100%;
       }
@@ -129,16 +123,6 @@
     // Text Col
     .two-col-text-container{
       color: white;
-      margin-bottom: 5rem;
-      h1{
-        font-size: 4rem;
-        font-weight: 800;
-      }
-      p{
-        font-weight: 100;
-        font-size: 2rem;
-        letter-spacing: 0.4px;
-      }
     }
 
 // == animation: FadeIn
@@ -176,9 +160,6 @@
       margin-top: 0;
       margin-bottom: .75rem;
       color: $stone-grey;
-      font-weight: 900;
-      font-size: 2.125rem;
-      letter-spacing: .021rem;
     }
   }
   .landing-img{
@@ -190,7 +171,7 @@
     margin-left: 1em;
     p{
       font-size: 1em;
-      font-weight: $standard-font-weight;
+      font-weight: $bold-font-weight;
     }
   }
   .two-col-img-container {
@@ -203,13 +184,38 @@
   }
   .two-col-text-container{
     margin-top: 15rem;
+    margin-bottom: 5rem;
     h2{
       font-size: 3em;
       margin-bottom: .75em;
     }
     p{
-      font-size: 1.25em;
-      line-height: 26px;
+      font-size: 1.15em;
+    }
+    .icon-container{
+      // margin-top: 2.25em;
+      .icon-span{
+        display: block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
+        box-shadow: 0 0.5625rem 1.125rem 0 rgba(64,64,64,0.14);
+        margin-top: 1em;
+      }
+      // .row{
+      //   // margin-bottom: 2rem;
+      // }
+      .landing-img-icon{
+        display: inline-block;
+        padding-left: 1.85rem;
+        padding-top: 1.75rem;
+        padding-right: 1.75rem;
+        padding-bottom: 1.75rem;
+        height: 100%;
+        // width: 100%;
+      }
     }
   }
 }
