@@ -1,10 +1,67 @@
 @import '../base/image-style-extends';
 // =============== PORTFOLIO; ABOUT ME SECTION ========== //
 #about{
-  h1{
-    font-size: 4rem;
-    font-weight: 800;
+  background-color: $primary-tan;
+}
+
+.profile-card-header{
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+  .nav-tabs{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 0;
+    .profile-link{
+      background-color: $gray-200;
+      border: none;
+      color: $stone-grey;
+      margin-right: 1em;
+      margin-bottom: 0;
+      margin-left: .5rem;
+      padding: 1rem;
+      text-decoration: none;
+      &:hover{
+        background-color: $white;
+        -webkit-box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.1);
+        box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.1);
+      }
+      span{
+        margin-left: .5em;
+        font-size: 1.25em;
+      }
+    }
+    .profile-link.active{
+      color: #fff;
+      background-color: $primary-green;
+    }
   }
+.profile-card-body{
+  display: none;
+  padding: 1.75rem;
+  figure{
+    padding: .25rem;
+    -webkit-box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+    box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+    img{
+      padding: .35rem;
+    }
+    figcaption{
+      margin-left: .5em;
+      font-size: .75em;
+      font-weight: 100;
+    }
+  }
+}
+   .profile-card-body.active{
+      display: block;
+    }
+
+#about{
   h5{
     display: block;
     margin-top: 0;
@@ -12,11 +69,6 @@
     font-weight: 900;
     font-size: 2.125rem;
     letter-spacing: 0.021rem;
-  }
-  p{
-    font-weight: 100;
-    font-size: 2rem;
-    letter-spacing: 0.4px;
   }
 }
 .fixed{
@@ -40,10 +92,6 @@
   }
 }
 @media (min-width: 992px) {
-  .contact-container{
-    p{
-      font-size: 1.25em;
-    }
-  }
+
 } 
 

@@ -5,6 +5,10 @@
 // @include media-breakpoint-only(xl) { ... }
 
 // ========= CLIENT CAROUSEL SECTION ========= //
+.contact-container{
+  background-color: $primary-tan
+}
+
 .card{
   border: none;
   border-radius: 0%;
@@ -44,14 +48,14 @@
 .client-card-body{
   // margin: 1em;
   flex: 1 1 auto;
-  padding: 2rem 3.5rem 2rem 3.5rem;
+  padding: 1rem 2rem 1rem 2rem;
 
   .review-text{
     display: block;
     position: relative;
     margin-top: .75rem;
     padding-bottom: .625rem;
-    font-size: 1.25rem;
+    font-size: .85rem;
     line-height: 1.4;
     letter-spacing: 0.4px;
   }
@@ -81,7 +85,6 @@
 
 }
 // Card Footer
-// ML - 6:12 pm 12/11
 .client-card .client-card-footer{
   display: flex;
   align-items: center;
@@ -114,8 +117,6 @@
       padding-left: .5rem;
       -webkit-transition: opacity .25s;
       transition: opacity .25s;
-      font-size: .85rem;
-      font-weight: 600;
       opacity: .7;
       vertical-align: middle;
     }
@@ -136,7 +137,7 @@
 .carousel-card{
   background: white;
   margin-bottom: 4em;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 #clientCarousel{
@@ -190,13 +191,11 @@
     font-weight: 100;
     padding-left: 2em;
     padding-right: 2em;
-
     p{
       margin-top: 8px;
       margin-bottom: 0;
     }
   }
-
   cite{
     font-size: 1em;
   }
@@ -221,10 +220,10 @@ h3.carousel-heading{
 }
 // homerow
 .clients-hr{
-  border-top: .05rem solid #b4b4b4;
+  border-top: .15rem solid #ffffff;
   margin-top: 12px;
   margin-bottom: 10px;
-  width: 16.5%;
+  width: 35.5%;
 }
 // stars
 .star-row-container{
@@ -277,12 +276,9 @@ h3.carousel-heading{
 }
 
 // lg
-@media (min-width: 992px) { 
+@include media-breakpoint-up(lg) { 
   .carousel-container{
     display: block;
-  }
-  .carousel-card{
-    margin-top: 2em;
   }
   .carousel-card-pic-col{
     box-shadow: 4px 4px 25px 5px rgba(207, 207, 207, 0.995); 
@@ -298,5 +294,45 @@ h3.carousel-heading{
       margin-bottom: 0;
     }
   }
+  .client-card-body{
+    // margin: 1em;
+    flex: 1 1 auto;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+  
+    .review-text{
+      display: block;
+      position: relative;
+      margin-top: .75rem;
+      padding-bottom: .625rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+    }
+    .review-text>a{
+      transition: color .3s;
+      text-decoration: none;
+    }
+  
+    .tag-link{
+      display: inline-block;
+      position: relative;
+      margin-top: .3125rem;
+      margin-right: .375rem;
+      margin-bottom: .3125rem;
+      padding: .3125rem .75rem;
+      -webkit-transition: color .25s;
+      transition: color .25s;
+      background-color: #fff;
+      color: #404040;
+      font-size: .6875rem;
+      font-weight: 600;
+      text-decoration: none;
+      -webkit-box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+      box-shadow: 0 0.75rem 1.25rem 0.0625rem rgba(64,64,64,0.09);
+      z-index: 1;
+    }
+  
+  }
+  
 
 }

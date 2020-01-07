@@ -1,9 +1,8 @@
 // ======= SERVICES ======== //
 .services-container{
-  h1{
-    font-size: 4rem;
-    font-weight: 800;
-  }
+  // background-image: url(../assets/img/arrow.png);
+  // background-position: 81% 450px;
+  // background-repeat: no-repeat;
 }
 .service-col{
   // border: 1px solid black;
@@ -17,11 +16,13 @@
       width: 100%;
     }
     .service-card-body{
-      padding: 1.25rem;
+      padding: 1rem;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-
+      .card-body{
+        padding: .5rem;
+      }
       .service-title{
         display: block;
         margin-top: 0;
@@ -36,17 +37,23 @@
         transition: color .3s;
         text-decoration: none;
       }
-      .card-body{
-        font-size: 1.25em;
-        line-height: 26px;
-        font-weight: 100;
-        letter-spacing: 0.4px;
-      }
     }
   }
 }
 #accordion {
   .svg-inline--fa {
     margin-left: 1em;
+  }
+}
+@include media-breakpoint-up(lg){
+  .service-col{
+    .service-card{
+      .service-card-body{
+        padding: 1.25rem;
+        .card-body{
+          padding: 1em;
+        }
+      }
+    }
   }
 }

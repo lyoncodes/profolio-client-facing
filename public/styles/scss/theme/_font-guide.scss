@@ -1,0 +1,61 @@
+$heading-font: 'Oswald', sans-serif;
+$body-font: 'Open-Sans', sans-serif;
+$bold-font-weight: 800;
+$light-font-weight: 100;
+
+body, p{
+  font-family: $body-font;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font;
+}
+
+.navbar, .nav, .post-author-name, button, strong{
+ font-family: $heading-font; 
+}
+
+.sub-title{
+  font-weight: 900;
+  font-size: 1.45rem;
+  letter-spacing: .021rem;
+}
+.text-content{
+  font-weight: $light-font-weight;
+  font-size: 1.15rem;
+  letter-spacing: 0.4px;
+}
+.service-card-body{
+  .card-body{
+    .text-content{
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .big-title{
+    font-size: 5.25rem;
+    font-weight: $bold-font-weight;
+  }
+  .little-title{
+    font-size: 4rem;
+    font-weight: $bold-font-weight;
+  }
+  .sub-title{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: .021rem;
+  }
+  .text-content{
+    font-weight: $light-font-weight;
+    font-size: 1.15rem;
+    letter-spacing: 0.4px;
+  }
+  .service-card-body{
+    .card-body{
+      .text-content{
+        font-size: 1.15rem;
+      }
+    }
+  }
+}
