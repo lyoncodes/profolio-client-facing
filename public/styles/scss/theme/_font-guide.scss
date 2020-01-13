@@ -18,18 +18,13 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 900;
   font-size: 1.45rem;
   letter-spacing: .021rem;
+  margin-bottom: 1rem;
 }
 .text-content{
   font-weight: $light-font-weight;
   font-size: 1.15rem;
   letter-spacing: 0.4px;
-}
-.service-card-body{
-  .card-body{
-    .text-content{
-      font-size: 1rem;
-    }
-  }
+  line-height: 1.5rem;
 }
 
 @include media-breakpoint-up(lg) {

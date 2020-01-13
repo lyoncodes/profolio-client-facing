@@ -12,6 +12,9 @@
     transition: all 250ms linear;
   }
 }
+.btn-link{
+  @extend %btn-link-override
+}
 .dropdown-toggle{
   height: 65px;
   width: 10%;
