@@ -1,29 +1,48 @@
-.container-fluid.services-container
-  .row.justify-content-center
-    .service-col.col-xl-4.col-10.mt-5.mb-30.ml-lg-auto.pb-2
-      .card.service-card
-        a.post-thumb(href="#")
-          img(src="../styles/assets/img/country-house.jpg")
-        .service-card-body
-          h6.sub-title Empowering The Next Step
-          #accordion
-            .card
-              #headingOne.card-header
-                h5.mb-0
-                  button.btn.btn-link(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
-                    | Buyers
-                    i(class=plus_icon)
-              #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion')
+.container-fluid.services-container.mt-5
+  .row
+    .col-lg-6.col-12.mt-5#section-banner-a
+      .col-12.order-1.order-lg-2.text-center.align-self-center.ml-auto.mr-auto.mt-5
+        .row.align-items-center
+          .col-12.img-title-wrapper
+            h1.little-title Let's Accomplish Your Real Estate Goals
+    .col-lg-6.col-12
+      .service-col.order-2.order-lg-1.col-12.mb-30.ml-lg-auto.pb-2
+        .card.service-card
+          .service-card-body
+            #service-block
+              .card
+                #headingOne.card-header
+                  h6.sub-title.text-center.text-md-left.mb-0 Buyers
                 .card-body
-                  p.text-content Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
-            .card
-              #headingTwo.card-header
-                h5.mb-0
-                  button.btn.btn-link.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
-                    | Sellers
-                    i(class=plus_icon)
-              #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordion')
-                .card-body
-                  p.text-content Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
-    .col-xl-4.text-center.align-self-center.ml-auto.mr-auto
-      h1.little-title Let's Accomplish Your Real Estate Goals
+                  .icon-col#icon-col-b
+                    ul
+                      li
+                        i(class=phone_icon)
+                        span consultation
+                        a(href="#") Pre-approved? Bursting with ideas? I'll get the ball rolling by aligning your search with your goals.
+                        li
+                          i(class=envelope_icon)
+                          span tour listings
+                          a(href="#") Let me share my knowledge as we browse available inventory
+                        li
+                          i(class=page_icon)
+                          span Place Your Offer
+                          a(href="#") I'll leverage my expertise to position your offer in the best competitive light 
+                .card
+                  #headingOne.card-header
+                    h6.sub-title.text-center.text-md-left.mb-0 Sellers
+                  .card-body
+                    .icon-col#icon-col-b
+                      ul
+                        li
+                          i(class=phone_icon)
+                          span consultation
+                          a(href="#") Pre-approved? Bursting with ideas? I'll get the ball rolling by aligning your search with your goals.
+                        li
+                          i(class=envelope_icon)
+                          span tour listings
+                          a(href="#") Let me share my knowledge as we browse available inventory
+                        li
+                          i(class=page_icon)
+                          span Place Your Offer
+                          a(href="#") I'll leverage my expertise to position your offer in the best competitive light
